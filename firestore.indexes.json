@@ -1,0 +1,20 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "snapshots_ocupacao",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "timestamp", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "historico_leitos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "leitoId", "order": "ASCENDING" },
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
