@@ -36,9 +36,10 @@ jobs:
           VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
 
-      - name: Build functions
-        run: npm ci && npm run build
-        working-directory: functions
+      #     Build Functions (Desabilitado por enquanto, pois não estamos usando funções no momento)
+      # - name: Build functions
+      #   run: npm ci && npm run build
+      #   working-directory: functions
 
       - name: Deploy Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
