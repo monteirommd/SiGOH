@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { connectAuthEmulator, getAuth } from "firebase/auth";
-import { connectFunctionsEmulator, getFunctions } from "firebase/functions";
 // Importe seu objeto de configuração da raiz
 
 const firebaseConfig = {
@@ -19,14 +18,12 @@ export const app = initializeApp(firebaseConfig);
 // Exporta as instâncias para serem usadas nos outros services
 export const db = getFirestore(app);
 export const auth = getAuth(app);
-export const functions = getFunctions(app, "southamerica-east1");
 
 if (import.meta.env.VITE_USE_EMULATOR === "true") {
   connectAuthEmulator(auth, "http://localhost:9099", {
     disableWarnings: true,
   });
   connectFirestoreEmulator(db, "localhost", 8080);
-  connectFunctionsEmulator(functions, "localhost", 5001);
 
   console.log(
     "%c[Firebase] Usando emulator local",
