@@ -14,7 +14,7 @@ export const HeaderLayout = () => {
         </Avatar>
       </div>
       <div className="col-span-4">
-        <h2 className="font-bold text-2xl">NIR - Mapa de leitos</h2>
+        <h2 className="font-bold text-2xl">SiGOH</h2>
       </div>
       <div className="justify-self-end">
         <LogOut
