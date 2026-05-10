@@ -50,7 +50,7 @@ function Login() {
     <div className="bg-linear-to-tr from-[#1D68B4] to-[#4795E4] h-screen w-screen flex flex-col items-center">
       <div className="flex my-20 lg:my-30">
         <span className="text-white font-black text-3xl text-center lg:text-5xl">
-          Núcleo Interno de Regulação
+          Sistema de Gestão de Ocupação Hospitalar
         </span>
       </div>
       <div className="bg-white w-screen lg:w-[618px] h-screen rounded-t-3xl flex flex-col items-center p-6">
